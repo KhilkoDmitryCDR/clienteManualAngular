@@ -9,7 +9,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ListadoClientesComponent implements OnInit {
 
-  clientes: Cliente[];
+  clientes!: Cliente[];
 
   constructor(private clientesService: ClientesService) {
   }
