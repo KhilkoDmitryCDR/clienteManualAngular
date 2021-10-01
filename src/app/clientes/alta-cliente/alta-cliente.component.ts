@@ -9,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AltaClienteComponent implements OnInit {
 
-  cliente: Cliente;
-  grupos: Grupo[];
+  cliente!: Cliente;
+  grupos!: Grupo[];
 
-  constructor(private clientesService: ClientesService) { }
+  constructor(private clientesService: ClientesService) {
+  }
 
   ngOnInit() {
     this.cliente = this.clientesService.nuevoCliente();
